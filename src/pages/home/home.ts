@@ -11,7 +11,7 @@ import { ModalPage } from '../modalPage/modalPage';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
-    this.doWork();
+    
   }
 
   openModal() {
@@ -20,9 +20,12 @@ export class HomePage {
   }
 
   doWork() {
-    for (let i = 0; i < 1000; i++) {
+   var list = [];
+    for (let i = 0; i < 100; i++) {
       console.log (i + 1);
+      list.push(i);
     }
+    return list;
   }
 
 }
