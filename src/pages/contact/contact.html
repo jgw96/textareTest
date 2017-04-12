@@ -7,11 +7,10 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <h1>{{textInput}}</h1>
+
+	<ion-item>
+		<ion-textarea [(ngModel)]="textInput">
+		</ion-textarea>
+	</ion-item>
 </ion-content>
